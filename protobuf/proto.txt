@@ -1,0 +1,5 @@
+1.生成proto文件
+protoc --cpp_out=. person.proto
+
+2.编译
+g++ person.cpp person.pb.cc -o person `pkg-config --cflags --libs protobuf`
